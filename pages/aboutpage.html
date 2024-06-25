@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>helpfulheads</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/fragments/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header").innerHTML = data;
+          });
+
+        fetch("/fragments/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer").innerHTML = data;
+          });
+      });
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/resources/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+
+  <div id="header"></div>
+
+  <div class="container" id="about">
+    <h1>About</h1>
+    <div class="post">
+      <img src="/resources/two men talking.jpg" alt="" />
+      <article>
+        <p>
+          In 2023 Laura Fergusson Brain Injury Trust was successful in securing
+          a 12-month Lotteries Grant fund to set up a Traumatic Brain Injury
+          Peer & Whānau Support Service. Laura Fergusson Brain Injury Trust has
+          been providing rehabilitation and residential support for people with
+          traumatic brain Injury (TBI) from concussion through to severe,
+          long-term injury for many years.
+        </p>
+        <a href="https://www.lfbit.co.nz/">lfbit.co.nz </a>
+        <p>
+          A common theme amongst those with TBI and their support people is the
+          feeling of being misunderstood, isolated, frustrated with the slow
+          progress and alone in their recovery.
+        </p>
+        <p>
+          The complex journey of rehabilitation and recovery is hard to navigate
+          for families and those with the injury, having support from someone
+          who has been through it can be invaluable.
+        </p>
+        <p>
+          Traumatic Brain Injury is often an invisible injury and therefore is
+          even harder to understand for those around us.
+        </p>
+        <p>
+          Our aim is to have a large database of keen volunteers of different
+          ages, from all different walks of life and locations in the Canterbury
+          region. We want to be able to offer support to those who would like to
+          talk to someone who can truly understand what they are struggling
+          with.
+        </p>
+        <p>
+          The support may be a simple phone call or text, it could be a coffee
+          and a walk. It may be once a week or just as required.
+        </p>
+        <p>
+          We aim to find a good fit for everyone, so that practical experiences
+          can be shared and emotional support can be provided.
+        </p>
+      </article>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+</html>

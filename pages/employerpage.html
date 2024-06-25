@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>helpfulheads</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/fragments/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header").innerHTML = data;
+          });
+
+        fetch("/fragments/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer").innerHTML = data;
+          });
+      });
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/resources/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+
+  <div id="header"></div>
+  <body>
+    <div class="container">
+      <div class="post">
+        <article>
+          <h2>Employer Peer Support Service</h2>
+          If you would like to talk to another employer, receive further
+          information or learn more about traumatic brain injury and return to
+          work. Please see our
+          <a href="/resources/Helpful Heads Employer.pdf" target="_blank"
+            >factsheet</a
+          >
+          for more information
+        </article>
+        <img
+          id="employer_image"
+          src="/resources/employeer_image.jpg"
+          alt="employer_image"
+        />
+      </div>
+    </div>
+  </body>
+  <div id="footer"></div>
+</html>

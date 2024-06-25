@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>helpfulheads</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/fragments/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header").innerHTML = data;
+          });
+
+        fetch("/fragments/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer").innerHTML = data;
+          });
+      });
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="shortcut icon" href="/resources/Logo.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <div class="container">
+      <article class="volunteer_information">
+        Have you recovered or are still recovering from a traumatic brain injury
+        and feel you could offer support to someone else? Are you still
+        supporting a family member/friend through their recovery and could offer
+        support to another person in a similar situation? We are looking for
+        Peer Support Volunteers to provide emotional, social and practical
+        support to people who are in the midst of their brain injury journey, to
+        alleviate feelings of isolation and fear. Please see our
+        <a
+          href="/resources/Helpful Heads Peer Support Volunteer Info.pdf"
+          target="_blank"
+          >factsheet</a
+        >
+        for more information.
+      </article>
+
+      <div class="form_container">
+        <form action="" id="volunteer_form">
+          <label for="fname">First name</label>
+          <input type="text" id="fname" name="fname" />
+          <label for="lname">Last name</label>
+          <input type="text" id="lname" name="lname" />
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+          <label for="address">Address</label>
+          <input type="text" id="address" />
+          <label for="message">Messaage you would like to leave for us</label>
+          <textarea id="message"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>

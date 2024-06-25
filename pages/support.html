@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>helpfulheads</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/fragments/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header").innerHTML = data;
+          });
+
+        fetch("/fragments/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer").innerHTML = data;
+          });
+      });
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/resources/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <div class="container">
+      <div class="post">
+        <article id="support_article">
+          If you have had a traumatic brain injury ( concussion, moderate or
+          severe) or you support someone with a brain injury and would like to
+          talk to someone in a similar situation get in touch with our Peer
+          Support Service. Please see our
+          <a
+            href="/resources/Helpful Heads Peer Support Info.pdf"
+            target="_blank"
+            >factsheet</a
+          >
+          for more information
+        </article>
+        <img
+          id="support_image"
+          src="/resources//Helpful Heads Peer Support Info_page-0001.jpg"
+          alt="support_img"
+        />
+      </div>
+    </div>
+  </body>
+  <div id="footer"></div>
+</html>

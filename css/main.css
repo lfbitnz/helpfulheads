@@ -1,0 +1,280 @@
+/* Reset */
+* {
+  /* Alternative box model */
+  box-sizing: border-box;
+
+  /* Reset padding and margin on all elements */
+  padding: 0;
+  margin: 0;
+}
+
+/* Typography */
+
+html {
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #e8e8e8;
+}
+
+body {
+  line-height: 1.55;
+  color: rgb(60, 58, 71);
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+li a {
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+/* container */
+.container {
+  margin: 0 5% 0 5%;
+}
+
+/* Header */
+
+#topnav_header {
+  padding: 0 1rem 1rem 1rem;
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+#logo {
+  margin-top: 1rem;
+  width: 4.5rem;
+  margin-right: 1.5rem;
+}
+
+#logo-wrapper {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  text-decoration: none;
+  color: black;
+}
+
+#logo-text {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+#top_header_line {
+  border: none;
+  height: 3px; /* Set the height of the line */
+  background: rgb(73, 182, 108);
+}
+
+#bot_header_line {
+  border: none;
+  height: 3px; /* Set the height of the line */
+  background: rgb(52, 131, 177);
+}
+
+/* Topnav */
+.topnav {
+  position: relative;
+  margin: 1rem auto;
+  padding: 0 5%;
+}
+
+.topnav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.topnav li {
+  display: inline-block;
+  position: relative;
+  width: 25%;
+  margin: 0 2%;
+}
+
+.topnav li a {
+  color: #fff;
+  line-height: 1;
+  padding: 10px 10px 10px;
+  display: block;
+  border-radius: 15px;
+  background: #999;
+  text-align: center;
+  white-space: nowrap;
+}
+
+#nav_about {
+  background-color: rgb(52, 131, 177);
+}
+
+#nav_volunteer {
+  background-color: blueviolet;
+}
+
+#nav_resource {
+  background-color: rgb(73, 182, 108);
+}
+
+#nav_support {
+  background-color: rgb(218, 69, 39);
+}
+
+#nav_employer {
+  background-color: rgb(226, 187, 27);
+}
+
+/* footer */
+.contact_card {
+  font-size: 1.25rem;
+  padding: 0.75rem;
+  margin: 0 2% 25px 0;
+  vertical-align: top;
+}
+
+#footer_line {
+  border: none;
+  height: 3px; /* Set the height of the line */
+  background: linear-gradient(to right, rgb(73, 182, 108), rgb(52, 131, 177));
+}
+
+/* Resource Tab */
+
+.resource {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1.5rem;
+  margin: 1rem 5%;
+}
+
+.sidenav ul li a {
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 1.25rem;
+  padding: 5px 5px 5px 10px;
+  border-radius: 15px;
+  background-color: rgba(248, 203, 69, 0.35);
+}
+.sidenav ul li a:hover {
+  background-color: rgb(248, 203, 69);
+}
+
+.sidenav ul {
+  list-style: none;
+}
+
+.sidenav ul li {
+  margin: 1.5rem 1rem;
+}
+
+#accessibleTab {
+  display: none;
+}
+#helpTab {
+  display: none;
+}
+#advocacyTab {
+  display: none;
+}
+#websiteTab {
+  display: none;
+}
+#teachingTab {
+  display: none;
+}
+#rehabTab {
+  display: block;
+}
+
+/* Post Grid container that contains aticle and image*/
+/* This div is applied on homepage, aboutus page and support page */
+.post {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.5rem;
+  margin: 2rem 0;
+}
+.post img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+/* Volunteer Page */
+
+.volunteer_information {
+  margin: 1rem 0;
+}
+
+.form_container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 1rem auto;
+}
+
+#volunteer_form {
+  background-color: #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.form_container label {
+  display: block;
+}
+
+.form_container input {
+  display: block;
+  width: 100%;
+  height: 1.5rem;
+  border-radius: 5px;
+  padding: 3px;
+  border: 1px solid #ccc;
+}
+
+#message {
+  display: block;
+  width: 100%;
+  height: 5rem;
+  border-radius: 5px;
+  padding: 3px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.form_container button {
+  display: block;
+  width: 100%;
+  margin: 0.75rem 0;
+  background-color: #49c1a2;
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Support Page  */
+#support_image {
+  border-radius: 10px;
+}
+
+/* Employer page */
+#employer_image {
+  width: 80%;
+}

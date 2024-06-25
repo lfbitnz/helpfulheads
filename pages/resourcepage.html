@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>helpfulheads</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/fragments/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header").innerHTML = data;
+          });
+
+        fetch("/fragments/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer").innerHTML = data;
+          });
+      });
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="shortcut icon" href="/resources/Logo.png" type="image/x-icon" />
+  </head>
+
+  <div id="header"></div>
+
+  <div class="resource container">
+    <div class="sidenav">
+      <ul>
+        <li>
+          <a id="rehab" onclick="openPage('rehabTab')">Residential Rehab</a>
+        </li>
+        <li>
+          <a id="accessible" onclick="openPage('accessibleTab')"
+            >Accessible places</a
+          >
+        </li>
+        <li>
+          <a id="help" onclick="openPage('helpTab')">Self Help</a>
+        </li>
+        <li>
+          <a id="advocacy" onclick="openPage('advocacyTab')">Advocacy</a>
+        </li>
+        <li>
+          <a id="website" onclick="openPage('websiteTab')">Useful Websites </a>
+        </li>
+        <li>
+          <a id="teaching" onclick="openPage('teachingTab')"
+            >Webinars/teaching
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tabcontents">
+      <div id="rehabTab" class="tabcontent">
+        <a href="/resources/Puāwai Rehabilitation.pdf" target="_blank"
+          >Puawai Rehabilitation Unit Patient Information</a
+        >
+        (Some infomation about this website?)
+      </div>
+
+      <div id="accessibleTab" class="tabcontent">
+        <h1>Informations will be coming up soon</h1>
+      </div>
+
+      <div id="helpTab" class="tabcontent">
+        <h1>Informations will be coming up soon</h1>
+      </div>
+
+      <div id="advocacyTab" class="tabcontent">
+        <article>
+          <p>
+            <a href="https://www.wayfinders.org.nz/"
+              >Way Finders ACC navigation service</a
+            >
+            free service to help you understand and work with ACC
+          </p>
+          <p>
+            Brain Injury Association
+            <a href="https://brain-injury.nz/"
+              >Home - Brain Injury New Zealand</a
+            >
+            information and help in your region
+          </p>
+        </article>
+      </div>
+
+      <div id="websiteTab" class="tabcontent">
+        <h1>Informations will be coming up soon</h1>
+      </div>
+
+      <div id="teachingTab" class="tabcontent">
+        <h1>Informations will be coming up soon</h1>
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+
+  <script src="/js/functions.js"></script>
+</html>
