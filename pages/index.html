@@ -6,13 +6,13 @@
     <title>helpfulheads</title>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        fetch("/fragments/header.html")
+        fetch("../fragments/header.html")
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("header").innerHTML = data;
           });
 
-        fetch("/fragments/footer.html")
+        fetch("../fragments/footer.html")
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("footer").innerHTML = data;
@@ -21,13 +21,13 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="shortcut icon" href="/resources/Logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../resources/Logo.png" type="image/x-icon" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
     <div id="header"></div>
@@ -35,8 +35,8 @@
     <div class="container">
       <div class="post">
         <img
-          src="/resources/young Indian Woman talking.jpg"
-          alt=""
+          src="../resources/young Indian Woman talking.jpg"
+          alt="image"
           loading="lazy"
         />
         <article>
