@@ -6,13 +6,13 @@
     <title>helpfulheads</title>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        fetch("/fragments/header.html")
+        fetch("../fragments/header.html")
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("header").innerHTML = data;
           });
 
-        fetch("/fragments/footer.html")
+        fetch("../fragments/footer.html")
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("footer").innerHTML = data;
@@ -26,8 +26,8 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="shortcut icon" href="/resources/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="shortcut icon" href="../resources/Logo.png" type="image/x-icon" />
   </head>
 
   <div id="header"></div>
@@ -65,15 +65,14 @@
         <a href="/resources/Puāwai Rehabilitation.pdf" target="_blank"
           >Puawai Rehabilitation Unit Patient Information</a
         >
-        (Some infomation about this website?)
       </div>
 
       <div id="accessibleTab" class="tabcontent">
-        <h1>Informations will be coming up soon</h1>
+        <h1>Information will be coming up soon</h1>
       </div>
 
       <div id="helpTab" class="tabcontent">
-        <h1>Informations will be coming up soon</h1>
+        <h1>Information will be coming up soon</h1>
       </div>
 
       <div id="advocacyTab" class="tabcontent">
@@ -95,11 +94,11 @@
       </div>
 
       <div id="websiteTab" class="tabcontent">
-        <h1>Informations will be coming up soon</h1>
+        <h1>Information will be coming up soon</h1>
       </div>
 
       <div id="teachingTab" class="tabcontent">
-        <h1>Informations will be coming up soon</h1>
+        <h1>Information will be coming up soon</h1>
       </div>
     </div>
   </div>

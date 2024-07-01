@@ -6,13 +6,13 @@
     <title>helpfulheads</title>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        fetch("/fragments/header.html")
+        fetch("../fragments/header.html")
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("header").innerHTML = data;
           });
 
-        fetch("/fragments/footer.html")
+        fetch("../fragments/footer.html")
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("footer").innerHTML = data;
@@ -26,8 +26,8 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="/resources/Logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="shortcut icon" href="../resources/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/main.css" />
   </head>
 
   <div id="header"></div>
@@ -39,14 +39,14 @@
           If you would like to talk to another employer, receive further
           information or learn more about traumatic brain injury and return to
           work. Please see our
-          <a href="/resources/Helpful Heads Employer.pdf" target="_blank"
+          <a href="../resources/Helpful Heads Employer.pdf" target="_blank"
             >factsheet</a
           >
           for more information
         </article>
         <img
           id="employer_image"
-          src="/resources/employeer_image.jpg"
+          src="../resources/employeer_image.jpg"
           alt="employer_image"
         />
       </div>
