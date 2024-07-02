@@ -121,23 +121,23 @@ p {
 }
 
 #nav_about {
-  background-color: rgb(52, 131, 177);
+  background-color: rgb(226, 187, 27);
 }
 
 #nav_volunteer {
-  background-color: blueviolet;
-}
-
-#nav_resource {
   background-color: rgb(73, 182, 108);
 }
 
+#nav_resource {
+  background-color: blueviolet;
+}
+
 #nav_support {
-  background-color: rgb(218, 69, 39);
+  background-color: rgb(52, 131, 177);
 }
 
 #nav_employer {
-  background-color: rgb(226, 187, 27);
+  background-color: rgb(218, 69, 39);
 }
 
 /* footer */
