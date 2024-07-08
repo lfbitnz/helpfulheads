@@ -80,13 +80,13 @@ p {
 #top_header_line {
   border: none;
   height: 3px; /* Set the height of the line */
-  background: rgb(73, 182, 108);
+  background: rgb(72, 186, 127);
 }
 
 #bot_header_line {
   border: none;
   height: 3px; /* Set the height of the line */
-  background: rgb(52, 131, 177);
+  background: rgb(66, 151, 192);
 }
 
 /* Topnav */
@@ -125,7 +125,7 @@ p {
 }
 
 #nav_volunteer {
-  background-color: rgb(73, 182, 108);
+  background-color: rgb(72, 186, 127);
 }
 
 #nav_resource {
@@ -133,7 +133,7 @@ p {
 }
 
 #nav_support {
-  background-color: rgb(52, 131, 177);
+  background-color: rgb(66, 151, 192);
 }
 
 #nav_employer {
@@ -151,7 +151,7 @@ p {
 #footer_line {
   border: none;
   height: 3px; /* Set the height of the line */
-  background: linear-gradient(to right, rgb(73, 182, 108), rgb(52, 131, 177));
+  background: linear-gradient(to right, rgb(72, 186, 127), rgb(66, 151, 192));
 }
 
 /* Resource Tab */
