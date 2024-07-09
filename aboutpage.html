@@ -4,29 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>helpfulheads</title>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        fetch("../fragments/header.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("header").innerHTML = data;
-          });
 
-        fetch("../fragments/footer.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("footer").innerHTML = data;
-          });
-      });
-    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="../resources/Logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="shortcut icon" href="resources/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <div id="header"></div>
@@ -34,7 +20,7 @@
   <div class="container" id="about">
     <h1>About</h1>
     <div class="post">
-      <img src="../resources/two men talking.jpg" alt="" />
+      <img src="resources/two men talking.jpg" alt="" />
       <article>
         <p>
           In 2023 Laura Fergusson Brain Injury Trust was successful in securing
@@ -79,4 +65,6 @@
   </div>
 
   <div id="footer"></div>
+
+  <script src="js/scaffholding.js"></script>
 </html>

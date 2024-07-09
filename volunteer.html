@@ -4,21 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>helpfulheads</title>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        fetch("../fragments/header.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("header").innerHTML = data;
-          });
-
-        fetch("../fragments/footer.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("footer").innerHTML = data;
-          });
-      });
-    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,8 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="shortcut icon" href="../resources/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="resources/Logo.png" type="image/x-icon" />
   </head>
 
   <body>
@@ -42,7 +27,7 @@
         support to people who are in the midst of their brain injury journey, to
         alleviate feelings of isolation and fear. Please see our
         <a
-          href="../resources/Helpful Heads Peer Support Volunteer Info.pdf"
+          href="resources/Helpful Heads Peer Support Volunteer Info.pdf"
           target="_blank"
           >factsheet</a
         >
@@ -68,4 +53,7 @@
 
     <div id="footer"></div>
   </body>
+
+  <script src="js/scaffholding.js"></script>
 </html>
+  
