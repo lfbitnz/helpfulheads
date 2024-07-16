@@ -51,11 +51,20 @@ p {
 }
 
 /* Header */
-
 #topnav_header {
   padding: 0 1rem 1rem 1rem;
   display: flex;
   align-items: center; /* Align items vertically */
+  justify-content: space-between;
+}
+
+#menu_icon {
+  font-size: 2.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  pointer-events: visible;
+  visibility: hidden;
 }
 
 #logo {
@@ -75,6 +84,7 @@ p {
   margin-top: 1rem;
   font-size: 2.5rem;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 #top_header_line {
@@ -93,26 +103,25 @@ p {
 .topnav {
   position: relative;
   margin: 1rem auto;
-  padding: 0 5%;
+  padding: 0 3%;
 }
 
 .topnav ul {
   list-style: none;
   display: flex;
+  justify-content: space-between;
   padding: 0;
 }
 
 .topnav li {
   display: inline-block;
   position: relative;
-  width: 25%;
-  margin: 0 2%;
 }
 
 .topnav li a {
   color: #fff;
   line-height: 1;
-  padding: 10px 10px 10px;
+  padding: 10px;
   display: block;
   border-radius: 15px;
   background: #999;
@@ -203,7 +212,7 @@ p {
 }
 
 /* Post Grid container that contains aticle and image*/
-/* This div is applied on homepage, aboutus page and support page */
+/* This styled div is applied on homepage, aboutus page and support page */
 .post {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -277,4 +286,79 @@ p {
 /* Employer page */
 #employer_image {
   width: 80%;
+}
+
+@media screen and (max-width: 1200px) {
+  /* top nav */
+  #top_header_line {
+    display: none;
+    height: 5px;
+  }
+
+  #bot_header_line {
+    background: linear-gradient(to right, rgb(72, 186, 127), rgb(66, 151, 192));
+    height: 5px;
+  }
+  #menu_icon {
+    visibility: visible;
+  }
+
+  .topnav {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .topnav ul {
+    display: block;
+  }
+
+  .topnav li {
+    display: block;
+  }
+
+  .topnav li a {
+    border-radius: 0;
+  }
+  /*  */
+}
+
+@media screen and (max-width: 800px) {
+  /* Home page */
+  .post {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 5vw;
+    margin: 2vw 0;
+  }
+
+  .post img {
+    grid-row: 3; /* Position the image in the third row */
+    max-width: 100%;
+    height: auto;
+  }
+
+  .post article {
+    display: contents; /* Makes the article's children part of the grid */
+  }
+
+  #support_image {
+    grid-row: 2;
+  }
+
+  #employer_image {
+    grid-row: 2;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* Logo resizing */
+  #logo-text {
+    font-size: 7vw;
+  }
+
+  #logo {
+    width: 2.5rem;
+  }
 }
