@@ -320,7 +320,6 @@ p {
   .topnav li a {
     border-radius: 0;
   }
-  /*  */
 }
 
 @media screen and (max-width: 800px) {
@@ -343,12 +342,19 @@ p {
     display: contents; /* Makes the article's children part of the grid */
   }
 
+  /* Support page */
+
   #support_image {
     grid-row: 2;
   }
+  /* Employer page */
 
   #employer_image {
     grid-row: 2;
+  }
+
+  .form_container {
+    width: 90vw;
   }
 }
 
