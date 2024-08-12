@@ -211,6 +211,10 @@ p {
   display: block;
 }
 
+.tabcontent p {
+  margin-bottom: 1rem;
+}
+
 /* Post Grid container that contains aticle and image*/
 /* This styled div is applied on homepage, aboutus page and support page */
 .post {

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>helpfulheads</title>
+    <title>Helpful Heads - Peer Support</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,8 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="resources/Logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="resources/Logo.png" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -20,34 +20,38 @@
   </head>
 
   <body>
-    <div id="header"></div>
+    <header id="header"></header>
 
-    <div class="container">
-      <div class="post">
+    <main class="container">
+      <section class="post">
         <article id="support_article">
           <p>
             If you have had a traumatic brain injury (concussion, moderate or
             severe) or you support someone with a brain injury and would like to
-            talk to someone in a similar situation get in touch with our Peer
+            talk to someone in a similar situation, get in touch with our Peer
             Support Service. Please see our
             <a
               href="resources/Helpful Heads Peer Support Info.pdf"
               target="_blank"
+              aria-label="Open Peer Support Factsheet"
               >factsheet</a
             >
-            for more information
+            for more information.
           </p>
         </article>
-        <img
-          id="support_image"
-          src="resources//Helpful Heads Peer Support Info_page-0001.jpg"
-          alt="support_img"
-        />
-      </div>
-    </div>
+        <figure>
+          <img
+            id="support_image"
+            src="resources/Helpful Heads Peer Support Info_page-0001.jpg"
+            alt="Supportive peer interaction"
+            loading="lazy"
+          />
+        </figure>
+      </section>
+    </main>
 
-    <div id="footer"></div>
+    <footer id="footer"></footer>
+
+    <script src="js/scaffholding.js"></script>
   </body>
-
-  <script src="js/scaffholding.js"></script>
 </html>
